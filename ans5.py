@@ -28,7 +28,7 @@ user_choices = input("""
 if user_choices ==  "1":
     user_input  = float(input("Enter KM"))
     result = user_input *    0.621371
-    print(f"{user_input} KM = {resuult} Miles")
+    print(f"{user_input} KM = {result} Miles")
 
 elif user_choices =="2":
     user_input = float(input("Enter Miles"))
