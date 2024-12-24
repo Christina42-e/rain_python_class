@@ -7,7 +7,7 @@ user_choices = input("""
 """)
 
 if user_choices == "1":
-    user_radius = float(inpuut("Enter Radius"))
+    user_radius = float(input("Enter Radius"))
     result_area = 3.14*user_choices ** 2
     result_perimeter = 2 * 3.14 * user_radius
     print(f"Area  = {result_area}")

@@ -23,7 +23,7 @@ def setup_mission():
 
 #check battries over hundred
 def get_charged_battries():
-    battries = [50,30,4,45,12,18,30]  ## battery basket
+    batteries = [50,30,4,45,12,18,30]  ## battery basket
     minimum_battery_power = 20 ##battery use minimum 20% charge
     usable_battery_power = 0
     usable_battery_count = 0
@@ -32,7 +32,7 @@ def get_charged_battries():
       if battery > minimum_battery_power:  ##  check every battery IS OVERCHARGE 20% to use
        usable_battery_power += battery   ##if  yes use  power added
        usable_battery_count =  usable_battery_count  + 1  ##if yes use battery count add
-        if usable_battery_power >= 100:
+      if usable_battery_power >= 100:
            return usable_battery_power, usable_battery_count
 
 def decrypt_alien_message(alien_message):
@@ -54,7 +54,7 @@ def alien_attack_game():
     print("WELCOME TO MARS!!!!!!!!!!!!")
 
     print("Your battery is dead please!!!!!!! charge  the battery")
-    battery_power, _battery_count = get_charged_battries()
+    battery_power, battery_count = get_charged_battries()
 
     print("Hurray!!!! Your battery is charged")
 
