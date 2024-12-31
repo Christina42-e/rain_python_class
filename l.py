@@ -4,4 +4,4 @@ for item in fruits:
     print(item)
 
 fruits.add("apple")
-print(fruits)
+print(fruits)vi
