@@ -22,7 +22,6 @@ class Pet:
             print(f"{self.name} played! Happiness increased to {self.happiness}, Energy decreased to {self.energy}.")
         else:
             print(f"{self.name} is too tired to play. Consider resting.")
-
     def rest(self, value):
         self.energy = min(self.energy + value, 100)
         self.hunger = max(self.hunger - (value // 4), 0)

@@ -1,0 +1,3 @@
+virtualenv view
+source view/Scripts/activate
+pip freeze #library haru dekhauxa
